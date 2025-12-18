@@ -1,0 +1,19 @@
+{
+  "name": "postrgesql-utils",
+  "version": "1.0.0",
+  "description": "Comandos, utilidades, diversos usados no PostgreSQL",
+  "keywords": [
+    "postgresql"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joaofabioma/PostgreSQL.git"
+  },
+  "license": "ISC",
+  "author": "JoaoFabioMA",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  }
+}
