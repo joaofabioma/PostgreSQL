@@ -61,7 +61,7 @@ pg_dump -h localhost -U postgres -p 5432 -Fc -Z5 cnpjgov | lz4 -z -3 -v -c > dum
 ```
 
 ## Dump de base especifica com compressao LZ4 e fragmetado usando 7z em partes de 150MB
-
+`Existe um erro do 7z, como arquivo nao existe para usar dessa forma, o ideal seria usar o split`
 ```bash
 set PGPASSWORD=postgres
 pg_dump -h localhost -U postgres -p 5432 -Fc -Z5 cnpjgov | lz4 -z -3 -v -c | 7z a -si -v150m -mx=5 dumpbackup/dump_cnpjgov.7z
