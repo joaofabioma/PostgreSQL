@@ -3,6 +3,8 @@
 ### comandos executados, testados em ambiente windows com PostgreSQL 18 => `PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35226, 64-bit`
 
 ## gerar backup no arquivo base.tar salvando os WAL necessários
+## Compressao LZ4
+
 
 ```bash
 pg_basebackup -h localhost -U postgres -p 5432 -D basebackup/ -P -Ft -X fetch
